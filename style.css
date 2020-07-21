@@ -1,0 +1,352 @@
+*{margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+
+.carousel-item img{
+    width: 100%;
+    height: 93vh;
+}
+
+.about_img{
+    min-width: 100%;
+    max-height: 280px;
+}
+
+
+ /* .services .row>*{
+    padding-right: 0;
+    padding-left: 0;
+}*/
+
+
+.services img{
+   width: 100%;
+   height: 100%;
+}
+
+
+.offer_style{
+    background: #a6dcef;
+}
+
+
+footer p{
+    margin-bottom: 0;
+}
+
+/* -----------------------------responsive code--------------------------------------------*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { ... }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/* --------------------------------------------------styling gallery--------------------------------------*/
+
+
+
+.container .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgbox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgbox img{
+    transition: transform 2s;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.container .box:hover .imgbox img
+{
+   transform: scale(1.2);
+}
+
+.container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.8);
+    transform:scaleY(0);
+    transition: transform .5s;
+
+}
+
+.container .box:hover .details{
+    transform:scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+
+}
+
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+   
+
+}
+
+
+/* -------------------------------------------------------footer--------------------------------------*/
+
+#footer{
+    background: #1d1d1d;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+}
+
+#footer .footer-top{
+    background: #1d1d1d;
+    padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info{
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3{
+        font-size: 34px;
+        margin: 0 0 20px 0;
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+}
+
+#footer .footer-top .footer-info p{
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #ecf5ff;
+}
+
+#footer .footer-top .social-links a{
+    font-size: 18px;
+    display:inline-block;
+    background: #007bff;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover{
+    background:  #0067d5;
+    color: #fff;
+}
+
+#footer .footer-top h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li{
+    padding: 8px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child{
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a{
+    color: #ecf5ff;
+}
+
+#footer .footer-top .footer-links ul a:hover{
+    color: #74b5fc;
+}
+
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p{
+    line-height: 26px;
+}
+
+#footer .footer-top .footer-newsletter{
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type="email"]{
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+}
+
+
+#footer .footer-top .footer-newsletter input[type="submit"]{
+    background: #007bff;
+    border: 0;
+    padding: 6px 8px;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover{
+    background: #0062cc;
+}
+
+#footer .copyright{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer .credits{
+    text-align: center;
+    font-size: 13px;
+    color: #bfddfe;
+}
+
+#footer .credits a{
+    color: #bfddfe;
+}
+
+#footer .credits a:hover{
+    color: #f1f7ff;
+}
+
+
+/* -------------------------------------------------post slider-----------------------------------*/
+
+
+.page-wrapper a:hover{
+      color: #006669;
+
+}
+
+
+.post-slider{
+    position: relative;}
+  
+
+
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+
+
+}
+
+
+.post-slider .next{
+           position: absolute;
+           top: 50%;
+           right: 30px;
+
+
+           font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+  
+}
+
+
+.post-slider .post-wrapper .post{
+    height: 320px;
+    width:300px;
+ 
+    margin: 0px 10px;
+    display: inline-block;
+background: white;
+border-radius: 5px;
+box-shadow: 1rem 1rem 1rem -1rem  #a0a0a033;
+
+}
+
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;
+  
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
